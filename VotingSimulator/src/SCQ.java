@@ -60,6 +60,7 @@ public class SCQ extends Question{
 		System.out.println(D + " students chose D. " + question[5]);
 		System.out.println(E + " students chose E. " + question[6]);
 		
+		//setResults of the current question using Question's inherited method
 		String[] results = {Integer.toString(A), Integer.toString(B), Integer.toString(C), Integer.toString(D), 
 				Integer.toString(E), finalAnswer}; 
 		setResults(VotingService.getQuestionCounter()-2, results);
