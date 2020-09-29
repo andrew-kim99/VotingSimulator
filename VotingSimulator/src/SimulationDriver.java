@@ -13,10 +13,12 @@ public class SimulationDriver {
 		
 		Student.printStudents();
 		
+		//begins simulation process of receiving student answers and gathering statistics
 		VotingService.runSimulation(Question.getQuestions());
 		
 		System.out.println();
 		
+		//calls VotingService's method to output all five questions' statistics at the end
 		VotingService.finalOutput();
 	}
 }
