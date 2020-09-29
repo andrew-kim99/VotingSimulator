@@ -2,15 +2,16 @@
 
 public class VotingService {
 	
-	
+	//keeps track of current question
 	private static int questionCounter = 1;
 	
-	
+	//getmethod for questionCounter
 	public static int getQuestionCounter() {
 		return questionCounter;
 	}
 	
-	
+	//almost like the main Method of this class, this method will determine if the current question is single choice or multiple choice and send the 
+	//question to its respective method
 	public static void runSimulation(String[][] questionSet) {
 		for(int i = 0; i < questionSet.length; i++) {
 			if (Integer.parseInt(questionSet[i][0])==1) {
@@ -55,7 +56,7 @@ public class VotingService {
 		System.out.println("---------------------------------------");
 		Student.submitAnswersMCQ(question);
 	}
-	
+	//output method to show final statistics at the very end of the simulation
 	public static void finalOutput() {
 		System.out.println("---------------------------------------");
 		System.out.println("FINAL RESULTS");
