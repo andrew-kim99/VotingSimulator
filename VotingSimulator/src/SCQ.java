@@ -1,14 +1,14 @@
 
 public class SCQ extends Question{
 	
-	int A, B, C, D, E;
-	String finalAnswer;
+	int A, B, C, D, E;//counters for each answer choice
+	String finalAnswer;//correct answer will be placed here
 	
 		
 	
 	
 	
-	
+	//this method will count how many students voted for each answer and display the correct answer to the question.
 	void verify(String[] question, String[][] studentID) {
 		A = 0;
 		B = 0;
